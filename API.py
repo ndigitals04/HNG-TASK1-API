@@ -14,8 +14,8 @@ def getUser():
         "current_day": day,
         "utc_time": date,
         "track": "",
-        "github_file_url": "https://github.com/username/repo/blob/main/file_name.ext",
-        "github_repo_url": "https://github.com/username/repo",
+        "github_file_url": "https://github.com/ndigitals04/HNG-TASK1-API/API.py",
+        "github_repo_url": "https://github.com/ndigitals04/HNG-TASK1-API",
         "status_code": 200
     }
 
@@ -32,11 +32,10 @@ def getUser():
         userData["track"] = track
     return jsonify(userData), 200
 
-
-@app.route("/create-user", methods=["POST"])
-def createUser():
-    data = request.get_json()
-    return jsonify(data), 201
+#@app.route("/create-user", methods=["POST"])
+#def createUser():
+#    data = request.get_json()
+#    return jsonify(data), 201
 
 
 if __name__ == "__main__":
